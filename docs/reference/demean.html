@@ -332,48 +332,48 @@ between-effects are printed in separated blocks.</p></td>
 
 <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'>demean</span>(<span class='no'>iris</span>, <span class='kw'>select</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Sepal.Length"</span>, <span class='st'>"Petal.Length"</span>), <span class='kw'>group</span> <span class='kw'>=</span> <span class='no'>ID</span>)
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='no'>x</span>)</div><div class='output co'>#&gt;   Sepal.Length_between Petal.Length_between Sepal.Length_within
-#&gt; 1             5.768421             3.357895          -0.6684211
-#&gt; 2             5.956098             4.121951          -1.0560976
-#&gt; 3             5.768421             3.357895          -1.0684211
-#&gt; 4             5.956098             4.121951          -1.3560976
-#&gt; 5             5.752632             3.636842          -0.7526316
-#&gt; 6             5.768421             3.357895          -0.3684211
+#&gt; 1             5.710000             3.433333          -0.6100000
+#&gt; 2             5.710000             3.433333          -0.8100000
+#&gt; 3             5.873171             3.848780          -1.1731707
+#&gt; 4             5.710000             3.433333          -1.1100000
+#&gt; 5             5.710000             3.433333          -0.7100000
+#&gt; 6             6.039394             3.851515          -0.6393939
 #&gt;   Petal.Length_within
-#&gt; 1           -1.957895
-#&gt; 2           -2.721951
-#&gt; 3           -2.057895
-#&gt; 4           -2.621951
-#&gt; 5           -2.236842
-#&gt; 6           -1.657895</div><div class='input'>
+#&gt; 1           -2.033333
+#&gt; 2           -2.033333
+#&gt; 3           -2.548780
+#&gt; 4           -1.933333
+#&gt; 5           -2.033333
+#&gt; 6           -2.151515</div><div class='input'>
 <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'>demean</span>(<span class='no'>iris</span>, <span class='kw'>select</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Sepal.Length"</span>, <span class='st'>"binary"</span>, <span class='st'>"Species"</span>), <span class='kw'>group</span> <span class='kw'>=</span> <span class='no'>ID</span>)</div><div class='output co'>#&gt; <span style='color: #BBBB00;'>Categorical predictors (Species, binary) have been coerced to numeric values to compute de- and group-meaned variables.
 #&gt; </span><span></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='no'>x</span>)</div><div class='output co'>#&gt;   Sepal.Length_between Species_between binary_between Species_setosa_between
-#&gt; 1             5.768421       0.7894737      0.4210526              0.4473684
-#&gt; 2             5.956098       1.1463415      0.3658537              0.2439024
-#&gt; 3             5.768421       0.7894737      0.4210526              0.4473684
-#&gt; 4             5.956098       1.1463415      0.3658537              0.2439024
-#&gt; 5             5.752632       0.9736842      0.4736842              0.3421053
-#&gt; 6             5.768421       0.7894737      0.4210526              0.4473684
+#&gt; 1             5.710000       0.8333333      0.3000000              0.4333333
+#&gt; 2             5.710000       0.8333333      0.3000000              0.4333333
+#&gt; 3             5.873171       1.0000000      0.2926829              0.2926829
+#&gt; 4             5.710000       0.8333333      0.3000000              0.4333333
+#&gt; 5             5.710000       0.8333333      0.3000000              0.4333333
+#&gt; 6             6.039394       1.0606061      0.4545455              0.3636364
 #&gt;   Species_versicolor_between Species_virginica_between Sepal.Length_within
-#&gt; 1                  0.3157895                 0.2368421          -0.6684211
-#&gt; 2                  0.3658537                 0.3902439          -1.0560976
-#&gt; 3                  0.3157895                 0.2368421          -1.0684211
-#&gt; 4                  0.3658537                 0.3902439          -1.3560976
-#&gt; 5                  0.3421053                 0.3157895          -0.7526316
-#&gt; 6                  0.3157895                 0.2368421          -0.3684211
+#&gt; 1                  0.3000000                 0.2666667          -0.6100000
+#&gt; 2                  0.3000000                 0.2666667          -0.8100000
+#&gt; 3                  0.4146341                 0.2926829          -1.1731707
+#&gt; 4                  0.3000000                 0.2666667          -1.1100000
+#&gt; 5                  0.3000000                 0.2666667          -0.7100000
+#&gt; 6                  0.2121212                 0.4242424          -0.6393939
 #&gt;   Species_within binary_within Species_setosa_within Species_versicolor_within
-#&gt; 1     -0.7894737    -0.4210526             0.5526316                -0.3157895
-#&gt; 2     -1.1463415    -0.3658537             0.7560976                -0.3658537
-#&gt; 3     -0.7894737    -0.4210526             0.5526316                -0.3157895
-#&gt; 4     -1.1463415    -0.3658537             0.7560976                -0.3658537
-#&gt; 5     -0.9736842    -0.4736842             0.6578947                -0.3421053
-#&gt; 6     -0.7894737     0.5789474             0.5526316                -0.3157895
+#&gt; 1     -0.8333333     0.7000000             0.5666667                -0.3000000
+#&gt; 2     -0.8333333    -0.3000000             0.5666667                -0.3000000
+#&gt; 3     -1.0000000     0.7073171             0.7073171                -0.4146341
+#&gt; 4     -0.8333333    -0.3000000             0.5666667                -0.3000000
+#&gt; 5     -0.8333333    -0.3000000             0.5666667                -0.3000000
+#&gt; 6     -1.0606061     0.5454545             0.6363636                -0.2121212
 #&gt;   Species_virginica_within
-#&gt; 1               -0.2368421
-#&gt; 2               -0.3902439
-#&gt; 3               -0.2368421
-#&gt; 4               -0.3902439
-#&gt; 5               -0.3157895
-#&gt; 6               -0.2368421</div><div class='input'>
+#&gt; 1               -0.2666667
+#&gt; 2               -0.2666667
+#&gt; 3               -0.2926829
+#&gt; 4               -0.2666667
+#&gt; 5               -0.2666667
+#&gt; 6               -0.4242424</div><div class='input'>
 <span class='co'># demean interaction term x*y</span>
 <span class='no'>dat</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span>(
   <span class='kw'>a</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>1</span>, <span class='fl'>2</span>, <span class='fl'>3</span>, <span class='fl'>4</span>, <span class='fl'>1</span>, <span class='fl'>2</span>, <span class='fl'>3</span>, <span class='fl'>4</span>),
@@ -405,7 +405,7 @@ between-effects are printed in separated blocks.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.0.9000.</p>
 </div>
 
       </footer>

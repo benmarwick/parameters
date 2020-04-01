@@ -293,7 +293,10 @@ with zero-inflated component. <code>component</code> may be one of <code>"condit
 
   <span class='fu'><a href='https://rdrr.io/pkg/bayestestR/man/ci.html'>ci</a></span>(<span class='no'>model</span>)
   <span class='fu'><a href='https://rdrr.io/pkg/bayestestR/man/ci.html'>ci</a></span>(<span class='no'>model</span>, <span class='kw'>component</span> <span class='kw'>=</span> <span class='st'>"zi"</span>)
-}</div><div class='output co'>#&gt; <span class='message'>Loading required package: glmmTMB</span></div><div class='output co'>#&gt;     Parameter CI     CI_low   CI_high     Component
+}</div><div class='output co'>#&gt; <span class='message'>Loading required package: glmmTMB</span></div><div class='output co'>#&gt; <span class='warning'>Warning: package 'glmmTMB' was built under R version 3.6.3</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Package version inconsistency detected.</span>
+#&gt; <span class='warning'>TMB was built with Matrix version 1.2.18</span>
+#&gt; <span class='warning'>Current Matrix version is 1.2.17</span>
+#&gt; <span class='warning'>Please re-install 'TMB' from source using install.packages('TMB', type = 'source') or ask CRAN for a binary version of 'TMB' matching CRAN's 'Matrix' package</span></div><div class='output co'>#&gt;     Parameter CI     CI_low   CI_high     Component
 #&gt; 1 (Intercept) 95  0.2552453  1.324754 zero_inflated
 #&gt; 2     minedno 95 -2.4604492 -1.229369 zero_inflated</div><div class='input'># }
 </div></pre>
@@ -312,7 +315,7 @@ with zero-inflated component. <code>component</code> may be one of <code>"condit
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.0.9000.</p>
 </div>
 
       </footer>

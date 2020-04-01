@@ -288,27 +288,24 @@
   <span class='fu'>select_parameters</span>(<span class='no'>model</span>, <span class='kw'>cross_validation</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)
 }</div><div class='output co'>#&gt; <span class='warning'>Warning: Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.</span>
 #&gt; <span class='warning'>Running the chains for more iterations may help. See</span>
-#&gt; <span class='warning'>http://mc-stan.org/misc/warnings.html#bulk-ess</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable.</span>
-#&gt; <span class='warning'>Running the chains for more iterations may help. See</span>
-#&gt; <span class='warning'>http://mc-stan.org/misc/warnings.html#tail-ess</span></div><div class='output co'>#&gt; <span class='message'>Cross-validating best parameters...</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Some Pareto k diagnostic values are too high. See help('pareto-k-diagnostic') for details.</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.</span>
+#&gt; <span class='warning'>http://mc-stan.org/misc/warnings.html#bulk-ess</span></div><div class='output co'>#&gt; <span class='message'>Cross-validating best parameters...</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Some Pareto k diagnostic values are too high. See help('pareto-k-diagnostic') for details.</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.</span>
 #&gt; <span class='warning'>Running the chains for more iterations may help. See</span>
 #&gt; <span class='warning'>http://mc-stan.org/misc/warnings.html#bulk-ess</span></div><div class='output co'>#&gt; stan_glm
 #&gt;  family:       gaussian [identity]
-#&gt;  formula:      mpg ~ cyl + disp + hp + cyl:disp + cyl:hp
+#&gt;  formula:      mpg ~ cyl + disp + hp + cyl:disp
 #&gt;  observations: 32
-#&gt;  predictors:   6
+#&gt;  predictors:   5
 #&gt; ------
 #&gt;             Median MAD_SD
-#&gt; (Intercept) 51.3    6.2  
-#&gt; cyl         -3.3    1.0  
+#&gt; (Intercept) 46.0    4.5  
+#&gt; cyl         -2.6    0.8  
 #&gt; disp        -0.1    0.0  
-#&gt; hp          -0.1    0.1  
+#&gt; hp           0.0    0.0  
 #&gt; cyl:disp     0.0    0.0  
-#&gt; cyl:hp       0.0    0.0  
 #&gt; 
 #&gt; Auxiliary parameter(s):
 #&gt;       Median MAD_SD
-#&gt; sigma 2.6    0.3   
+#&gt; sigma 2.7    0.4   
 #&gt; 
 #&gt; ------
 #&gt; * For help interpreting the printed output see ?print.stanreg
@@ -329,7 +326,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.0.9000.</p>
 </div>
 
       </footer>
